@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boards_screen_navigation"
+    app:startDestination="@id/boardsListFragment">
+
+    <fragment
+        android:id="@+id/boardsListFragment"
+        android:name="android.com.displayhubcompanion.boardsScreen.BoardsListFragment"
+        android:label="fragment_boards_list"
+        tools:layout="@layout/fragment_boards_list" >
+        <action
+            android:id="@+id/action_boardsListFragment_to_boardConfigFragment"
+            app:destination="@id/boardConfigFragment" />
+        <action
+            android:id="@+id/action_boardsListFragment_to_boardAddFragment"
+            app:destination="@id/boardAddFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardConfigFragment"
+        android:name="android.com.displayhubcompanion.boardsScreen.BoardConfigFragment"
+        android:label="fragment_board_config"
+        tools:layout="@layout/fragment_board_config" >
+        <action
+            android:id="@+id/action_boardConfigFragment_to_boardModulesList"
+            app:destination="@id/boardModulesList" />
+        <action
+            android:id="@+id/action_boardConfigFragment_to_clockConfigurationFragment"
+            app:destination="@id/clockConfigurationFragment" />
+        <action
+            android:id="@+id/action_boardConfigFragment_to_newsConfigurationFragment"
+            app:destination="@id/newsConfigurationFragment" />
+        <action
+            android:id="@+id/action_boardConfigFragment_to_stocksConfigurationFragment"
+            app:destination="@id/stocksConfigurationFragment" />
+        <action
+            android:id="@+id/action_boardConfigFragment_to_weatherConfigurationFragment"
+            app:destination="@id/weatherConfigurationFragment" />
+        <action
+            android:id="@+id/action_boardConfigFragment_to_wifiConfigurationFragment"
+            app:destination="@id/wifiConfigurationFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_boardConfigFragment_to_boardsListFragment"
+            app:destination="@id/boardsListFragment"
+            app:popUpTo="@id/boardsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardAddFragment"
+        android:name="android.com.displayhubcompanion.boardsScreen.BoardAddFragment"
+        android:label="fragment_board_add"
+        tools:layout="@layout/fragment_board_add" >
+        <action
+            android:id="@+id/action_boardAddFragment_to_boardConfigFragment"
+            app:destination="@id/boardConfigFragment"
+            app:popUpTo="@id/boardsListFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardModulesList"
+        android:name="android.com.displayhubcompanion.boardsScreen.BoardModulesList"
+        android:label="fragment_board_modules_list"
+        tools:layout="@layout/fragment_board_modules_list" >
+        <action
+            android:id="@+id/action_boardModulesList_to_boardsListFragment"
+            app:destination="@id/boardsListFragment"
+            app:popUpTo="@id/boardsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsConfigurationFragment"
+        android:name="android.com.displayhubcompanion.boardsScreen.modulesConfiguration.NewsConfigurationFragment"
+        android:label="fragment_news_configuration"
+        tools:layout="@layout/fragment_news_configuration" >
+        <action
+            android:id="@+id/action_newsConfigurationFragment_to_boardsListFragment"
+            app:destination="@id/boardsListFragment"
+            app:popUpTo="@id/boardsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stocksConfigurationFragment"
+        android:name="android.com.displayhubcompanion.boardsScreen.modulesConfiguration.StocksConfigurationFragment"
+        android:label="fragment_stocks_configuration"
+        tools:layout="@layout/fragment_stocks_configuration" >
+        <action
+            android:id="@+id/action_stocksConfigurationFragment_to_boardsListFragment"
+            app:destination="@id/boardsListFragment"
+            app:popUpTo="@id/boardsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherConfigurationFragment"
+        android:name="android.com.displayhubcompanion.boardsScreen.modulesConfiguration.WeatherConfigurationFragment"
+        android:label="fragment_weather_configuration"
+        tools:layout="@layout/fragment_weather_configuration" >
+        <action
+            android:id="@+id/action_weatherConfigurationFragment_to_boardsListFragment"
+            app:destination="@id/boardsListFragment"
+            app:popUpTo="@id/boardsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clockConfigurationFragment"
+        android:name="android.com.displayhubcompanion.boardsScreen.modulesConfigurationnavigation_destionation.ClockConfigurationFragment"
+        android:label="clockConfigurationFragment" >
+        <action
+            android:id="@+id/action_clockConfigurationFragment_to_boardsListFragment"
+            app:destination="@id/boardsListFragment"
+            app:popUpTo="@id/boardsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wifiConfigurationFragment"
+        android:name="android.com.displayhubcompanion.boardsScreen.modulesConfiguration.WifiConfigurationFragment"
+        android:label="fragment_wifi_configuration"
+        tools:layout="@layout/fragment_wifi_configuration" >
+        <action
+            android:id="@+id/action_wifiConfigurationFragment_to_boardsListFragment"
+            app:destination="@id/boardsListFragment"
+            app:popUpTo="@id/boardsListFragment" />
+    </fragment>
+</navigation>

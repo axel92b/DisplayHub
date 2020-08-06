@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/save_config"
+        android:title="@string/upload"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/wifi_config"
+        android:title="@string/wifi_config"
+        app:showAsAction="never" />
+</menu>

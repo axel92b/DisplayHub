@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".boardsScreen.BoardsListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/mShimmerViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:shimmer_duration="1500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/module_placeholder_item" />
+
+                <include layout="@layout/module_placeholder_item" />
+
+                <include layout="@layout/module_placeholder_item" />
+
+                <include layout="@layout/module_placeholder_item" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <FrameLayout
+            android:id="@+id/modules_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/modules_rec_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="#e3e3e3"
+                tools:itemCount="5"
+                tools:listitem="@layout/element_module"
+                tools:orientation="horizontal"
+                tools:scrollbars="horizontal" />
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

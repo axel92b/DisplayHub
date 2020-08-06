@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "789006884889",
+    "firebase_url": "https://displayhubcompanion.firebaseio.com",
+    "project_id": "displayhubcompanion",
+    "storage_bucket": "displayhubcompanion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789006884889:android:7e6e19b34cf5378de38a88",
+        "android_client_info": {
+          "package_name": "android.com.displayhubcompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789006884889-qk1r201n7h2kiki5pq0aphdk7fckpnll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1hg1bhqOKxl_LJuh4FnWl0wsyahVqdFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789006884889-qk1r201n7h2kiki5pq0aphdk7fckpnll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
