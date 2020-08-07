@@ -1,0 +1,15 @@
+//
+// Created by vov4ik on 6/13/20.
+//
+
+#ifndef TRANSMITTERPROJECTESP_SRC_TRANSMITTERCONTROLLER_ABSTRACTMODULEUPDATER_CPP_DISPLAYMODULEUPDATER_H_
+#define TRANSMITTERPROJECTESP_SRC_TRANSMITTERCONTROLLER_ABSTRACTMODULEUPDATER_CPP_DISPLAYMODULEUPDATER_H_
+
+#include "AbstractModuleUpdater.h"
+class DisplayModuleUpdater : public AbstractModuleUpdater {
+ public:
+  ~DisplayModuleUpdater() override;
+  bool UpdateModule(AbstractModule& module, String module_data) override;
+};
+
+#endif //TRANSMITTERPROJECTESP_SRC_TRANSMITTERCONTROLLER_ABSTRACTMODULEUPDATER_CPP_DISPLAYMODULEUPDATER_H_
